@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body section {
+  background: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+body section .form-getboard {
+  max-width: 280px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 0 0 4px 1px #cacaca;
+  box-shadow: 0 0 4px 1px #cacaca;
+}
+
+body section .form-getboard h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+body section .form-getboard p {
+  font-size: 1.2em;
+  color: #050505;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+body section .form-getboard input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px 5px 10px 5px;
+  -webkit-border-radius: 10px 5px 10px 5px;
+  -moz-border-radius: 10px 5px 10px 5px;
+  -ms-border-radius: 10px 5px 10px 5px;
+  -o-border-radius: 10px 5px 10px 5px;
+  margin: 10px 0 20px;
+  border: 2px solid #007d0a;
+  -webkit-box-shadow: 0 0 2px #16b122;
+  box-shadow: 0 0 2px #16b122;
+  outline: none;
+  font-size: 1.2em;
+  color: #050505;
+}
+
+body section .form-getboard button {
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 2px #68cc70;
+  box-shadow: 0px 2px 2px #68cc70;
+  height: 40px;
+  font-size: 1.7em;
+  background: #b5fbb4;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+body section .form-getboard .boardlist {
+  border-top: 2px solid #f3f3f3;
+}
+
+body section .form-getboard .boardlist h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+body section .form-getboard .boardlist h2 #boardName {
+  font-weight: bold;
+}
+
+body section .form-getboard .boardlist .boardlist__items {
+  border: 2px solid #f3f3f3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item {
+  border-bottom: 2px solid #f3f3f3;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item.active .card__items {
+  display: block;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item.active .list__item {
+  background: #f3f3f3;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .list__item .list__name {
+  margin: 10px 0 5px;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .list__item .card__count {
+  font-size: 1.2em;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  text-align: center;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .list__item .card__count:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  background: #077310;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .list__item .card__count span {
+  position: relative;
+  font-size: 22px;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .card__items {
+  display: none;
+  border-top: 1px solid #f3f3f3;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .card__items .card__item .card__name {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item .card__items .card__item .card__description {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+body section .form-getboard .boardlist .boardlist__items .boardlist__item:nth-last-child(1) {
+  border: none;
+}
